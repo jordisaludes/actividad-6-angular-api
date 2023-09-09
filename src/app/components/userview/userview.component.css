@@ -1,0 +1,42 @@
+.userview-container {
+    flex-direction: column;
+}
+
+.container-img {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .userview-container {
+        flex-direction: row;
+    }
+}
+
+.user-img {
+    width:300px;
+}
+
+.vr {
+    margin: 0 30px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .vr {
+        display: block;
+    }
+}
+
+.card-title {
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+

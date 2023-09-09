@@ -1,0 +1,23 @@
+.card {
+    width:100%; 
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    align-items: center;
+}
+
+.btn svg {
+    width: 25px;
+    height: 25px;
+
+}
+

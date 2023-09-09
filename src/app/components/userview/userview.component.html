@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="userview-container d-flex justify-content-around align-items-center">
+        <div class="container-img">
+            <img class="user-img rounded-circle" src="{{userToShow?.image}}" alt="Imagen del usuario">
+        </div>
+        <div class="vr"></div>
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">{{userToShow?.first_name}}</h4>
+                <h4 class="card-title">{{userToShow?.last_name}}</h4>
+            </div>
+            <div class="card-body">
+                <p><span class="fw-bold">ID del usuario: </span>{{userToShow?._id}}</p>
+                <p><span class="fw-bold">Username: </span>{{userToShow?.username}}</p>
+                <p><span class="fw-bold">Email del usuario: </span>{{userToShow?.email}}</p>
+                <p><span class="fw-bold">Imagen URL: </span>{{userToShow?.image}}</p>
+                <p><span class="fw-bold">Contraseña: </span>{{userToShow?.password}}</p>
+            </div>
+
+            <div class="card-footer d-flex justify-content-around">
+                <button class="btn btn-primary">Eliminar</button>
+                <button class="btn btn-primary" [routerLink]="['/updateuser/', userToShow?._id]">Actualizar</button>
+                <button class="btn btn-primary" [routerLink]="['/home']">Volver a listado</button>
+            </div>
+        </div>
+    </div>
+</div>

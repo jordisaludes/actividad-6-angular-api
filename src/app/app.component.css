@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logoContainer img {
+    height: 90px;
+}
